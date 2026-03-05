@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zelij - Fleuriste artisanal. Bouquets inspirés de la mosaïque marocaine. Livraison Paris 24h.">
+  <title>Zelij - Fleuriste Artisanal</title>
+  <link rel="icon" type="image/webp" href="img/Logo.webp">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="zellige-border"></div>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+        <img src="img/Logo.webp" alt="Logo Zelij" height="38">
+        <span>Z<span>e</span>lij</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+          <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+
+  <!-- section hero / bannière principale -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-12 col-lg-6 hero-text">
+          <p class="sous-titre">
+            Fleuriste artisanal —
+            <a href="https://www.google.com/maps/search/?api=1&query=12+rue+des+rosiers,+paris" target="_blank" rel="noopener" style="color:var(--turq);text-decoration:underline;text-underline-offset:4px;">12 rue des Rosiers, Paris 4e</a>
+          </p>
+          <h1>L'art du bouquet,<br><em>l'âme du Maroc.</em></h1>
+          <hr class="ocre">
+          <p class="mt-3 mb-4" style="color:rgba(255,255,255,.7);max-width:480px;line-height:1.8;">
+            Chaque composition Zelij s'inspire des motifs géométriques du zellige marocain — des fleurs sélectionnées à la main, assemblées avec soin.
+          </p>
+          <div class="d-grid d-sm-flex gap-3">
+            <a href="catalogue.html" class="btn btn-zelij">Voir le catalogue</a>
+            <a href="contact.html" class="btn btn-outline-zelij">Commander</a>
+          </div>
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <span class="badge-zelij">🌿 Fleurs locales</span>
+            <span class="badge-zelij">🚚 Livraison 24h</span>
+            <span class="badge-zelij">♻️ Emballage éco</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 hero-visual">
+          <div id="heroCarousel" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3500">
+                <img src="img/Slide_1.webp" class="d-block w-100" alt="L'Ombre de Majorelle — bouquet signature Zelij">
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="img/Slide_2.webp" class="d-block w-100" alt="Or Berbère — mimosa et roses dorées" loading="lazy">
+              </div>
+              <div class="carousel-item" data-bs-interval="3500">
+                <img src="img/Slide_3.webp" class="d-block w-100" alt="Rose de Dadès — pivoines et roses anciennes" loading="lazy">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Suivant</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- commander par occasion -->
+  <section class="py-5 bg-white" aria-labelledby="univers-titre">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label">Trouvez votre bouquet</span>
+        <h2 class="section-titre" id="univers-titre">Commander par occasion</h2>
+        <hr class="ocre mx-auto">
+      </div>
+      <div class="row g-3 g-md-4 justify-content-center">
+        <div class="col-6 col-sm-3" data-anim="fade-in-up">
+          <a href="catalogue.html" class="univers-item" aria-label="Voir les bouquets mariage">
+            <div class="univers-img-wrap">
+              <img src="img/Jasmin_de_Minuit.webp" alt="Bouquet mariage" loading="lazy">
+              <div class="univers-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="univers-label">
+              <span class="univers-icon" aria-hidden="true">💍</span>
+              <span class="univers-name">Mariage</span>
+              <span class="univers-sub">à partir de 65 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-3" data-anim="fade-in-up" data-anim-delay="120">
+          <a href="catalogue.html" class="univers-item" aria-label="Voir les bouquets anniversaire">
+            <div class="univers-img-wrap">
+              <img src="img/Terre_d_Atlas.webp" alt="Bouquet anniversaire" loading="lazy">
+              <div class="univers-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="univers-label">
+              <span class="univers-icon" aria-hidden="true">🎂</span>
+              <span class="univers-name">Anniversaire</span>
+              <span class="univers-sub">à partir de 38 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-3" data-anim="fade-in-up" data-anim-delay="240">
+          <a href="catalogue.html" class="univers-item" aria-label="Voir les bouquets romantiques">
+            <div class="univers-img-wrap">
+              <img src="img/Rose_de_Dades.webp" alt="Bouquet romantique" loading="lazy">
+              <div class="univers-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="univers-label">
+              <span class="univers-icon" aria-hidden="true">💛</span>
+              <span class="univers-name">Amour</span>
+              <span class="univers-sub">à partir de 49 €</span>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-sm-3" data-anim="fade-in-up" data-anim-delay="360">
+          <a href="catalogue.html" class="univers-item" aria-label="Voir les compositions entreprise">
+            <div class="univers-img-wrap">
+              <img src="img/Mosaique_Imperiale.webp" alt="Composition entreprise" loading="lazy">
+              <div class="univers-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="univers-label">
+              <span class="univers-icon" aria-hidden="true">🏢</span>
+              <span class="univers-name">Entreprise</span>
+              <span class="univers-sub">sur devis</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- bande de réassurance -->
+  <section class="reassurance-band" aria-label="Nos garanties">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up">
+          <div class="reassurance-item">
+            <div class="reassurance-icon" aria-hidden="true">🚚</div>
+            <div>
+              <strong class="reassurance-titre">Livraison 24h</strong>
+              <span class="reassurance-sub">Paris & Île-de-France · Offerte dès 60 €</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up" data-anim-delay="130">
+          <div class="reassurance-item">
+            <div class="reassurance-icon" aria-hidden="true">🌿</div>
+            <div>
+              <strong class="reassurance-titre">Fleurs locales</strong>
+              <span class="reassurance-sub">Producteurs Île-de-France · Récoltées sous 48h</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up" data-anim-delay="260">
+          <div class="reassurance-item">
+            <div class="reassurance-icon" aria-hidden="true">🔒</div>
+            <div>
+              <strong class="reassurance-titre">Paiement sécurisé</strong>
+              <span class="reassurance-sub">CB, PayPal & virement · Données chiffrées</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up" data-anim-delay="390">
+          <div class="reassurance-item">
+            <div class="reassurance-icon" aria-hidden="true">🎁</div>
+            <div>
+              <strong class="reassurance-titre">Emballage cadeau</strong>
+              <span class="reassurance-sub">Kraft recyclable · Message personnalisé offert</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- best sellers -->
+  <section class="section-sable" aria-labelledby="bestsellers-titre">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5">
+        <div>
+          <span class="section-label">Sélection</span>
+          <h2 class="section-titre" id="bestsellers-titre">Nos best-sellers</h2>
+          <hr class="ocre">
+        </div>
+        <a href="catalogue.html" class="btn btn-outline-zelij">Tout voir</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up">
+          <article class="card h-100">
+            <img src="img/L_Ombre_de_Majorelle.webp" class="card-img-top" alt="L'Ombre de Majorelle" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge-zelij">Best-seller</span></div>
+              <h3 class="card-title h5">L'Ombre de Majorelle</h3>
+              <p class="text-muted small flex-grow-1">Delphiniums, hortensias et chardons bleus. Électrique et envoûtant.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center mt-3">
+                <span class="card-prix">49 €</span>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up" data-anim-delay="130">
+          <article class="card h-100">
+            <img src="img/Rose_de_Dades.webp" class="card-img-top" alt="Rose de Dadès" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge-cobalt">Nouveau</span></div>
+              <h3 class="card-title h5">Rose de Dadès</h3>
+              <p class="text-muted small flex-grow-1">Roses anciennes, pivoines et boutons soyeux. Douceur des vallées marocaines.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center mt-3">
+                <span class="card-prix">55 €</span>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up" data-anim-delay="260">
+          <article class="card h-100">
+            <img src="img/Or_Berbere.webp" class="card-img-top" alt="Or Berbère" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2"><span class="badge-or">Saison</span></div>
+              <h3 class="card-title h5">Or Berbère</h3>
+              <p class="text-muted small flex-grow-1">Mimosa, craspedia et roses jaunes. Éclatant comme un bijou du désert.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center mt-3">
+                <span class="card-prix">38 €</span>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3" data-anim="fade-in-up" data-anim-delay="390">
+          <article class="card h-100">
+            <img src="img/Terre_d_Atlas.webp" class="card-img-top" alt="Terre d'Atlas" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <div class="mb-2">
+                <span class="badge-terra">Chaleur</span>
+                <span class="badge-or ms-1">-10%</span>
+              </div>
+              <h3 class="card-title h5">Terre d'Atlas</h3>
+              <p class="text-muted small flex-grow-1">Dahlias, œillets cuivrés et feuillages d'automne. Un bouquet de caractère.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center mt-3">
+                <div>
+                  <span class="card-prix">40 €</span>
+                  <small class="text-muted text-decoration-line-through ms-1">44 €</small>
+                </div>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- comment commander - etapes -->
+  <section class="section-bleue" aria-labelledby="how-it-works-titre">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-label" style="color:rgba(255,255,255,.6);">Simple & rapide</span>
+        <h2 class="section-titre" id="how-it-works-titre" style="color:#fff;">Comment commander ?</h2>
+        <hr class="ocre mx-auto">
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-md-4">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.8rem;">🌸</div>
+          <h3 class="h5 text-white">1. Choisissez</h3>
+          <p class="small mb-0" style="color:rgba(255,255,255,.7);">Parcourez le catalogue et sélectionnez le bouquet de votre choix.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.8rem;">📝</div>
+          <h3 class="h5 text-white">2. Commandez</h3>
+          <p class="small mb-0" style="color:rgba(255,255,255,.7);">Remplissez le formulaire en indiquant l'occasion et la date souhaitée.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <div aria-hidden="true" style="font-size:2rem;margin-bottom:.8rem;">🚚</div>
+          <h3 class="h5 text-white">3. Recevez</h3>
+          <p class="small mb-0" style="color:rgba(255,255,255,.7);">Livraison sous 24h dans Paris, emballage recyclable inclus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- avis clients -->
+  <section class="py-5" aria-labelledby="avis-titre">
+    <div class="container py-3">
+      <div class="text-center mb-5">
+        <span class="section-label">Ce qu'ils en disent</span>
+        <h2 class="section-titre" id="avis-titre">Avis clients</h2>
+        <hr class="ocre mx-auto">
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4" data-anim="fade-in-up">
+          <figure class="card h-100 p-4 m-0">
+            <div aria-label="5 étoiles sur 5" style="color:var(--or);letter-spacing:3px;" class="mb-2">★★★★★</div>
+            <blockquote class="blockquote fst-italic text-muted small flex-grow-1">
+              <p>"Bouquet magnifique, livré à l'heure. Les compositions inspirées du zellige sont vraiment uniques à Paris."</p>
+            </blockquote>
+            <figcaption class="small mt-3 fw-bold">— Sophie M., Paris 11e</figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-4" data-anim="fade-in-up" data-anim-delay="130">
+          <figure class="card h-100 p-4 m-0">
+            <div aria-label="5 étoiles sur 5" style="color:var(--or);letter-spacing:3px;" class="mb-2">★★★★★</div>
+            <blockquote class="blockquote fst-italic text-muted small flex-grow-1">
+              <p>"Commandé pour notre mariage. Les couleurs étaient exactement celles demandées. Service impeccable."</p>
+            </blockquote>
+            <figcaption class="small mt-3 fw-bold">— Karim & Inès B., Paris 4e</figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-4" data-anim="fade-in-up" data-anim-delay="260">
+          <figure class="card h-100 p-4 m-0">
+            <div aria-label="4 étoiles sur 5" style="color:var(--or);letter-spacing:3px;" class="mb-2">★★★★☆</div>
+            <blockquote class="blockquote fst-italic text-muted small flex-grow-1">
+              <p>"Fleurs fraîches et parfumées. La livraison le soir même est un vrai plus par rapport aux autres fleuristes."</p>
+            </blockquote>
+            <figcaption class="small mt-3 fw-bold">— Claire D., Paris 6e</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- produits similaires / maillage -->
+  <section class="py-5" aria-labelledby="reco-titre">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-5">
+        <div>
+          <span class="section-label">Maillage produit</span>
+          <h2 class="section-titre" id="reco-titre">Vous aimerez aussi</h2>
+          <hr class="ocre">
+        </div>
+        <a href="catalogue.html" class="btn btn-outline-zelij">Voir tout le catalogue</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card card-reco h-100">
+            <div class="card-reco-img-wrap">
+              <img src="img/Or_Berbere.webp" class="card-reco-img" alt="Or Berbère" loading="lazy">
+              <span class="card-reco-badge badge-or">Saison</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="card-reco-stars" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+                <small class="text-muted">(28)</small>
+              </div>
+              <h3 class="card-title mt-1 mb-1 h6">Or Berbère</h3>
+              <p class="text-muted small mb-3 flex-grow-1" style="line-height:1.5;">Mimosa, craspedia et roses jaunes. Éclatant comme un bijou du désert.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center">
+                <span class="card-prix">38 €</span>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card card-reco h-100">
+            <div class="card-reco-img-wrap">
+              <img src="img/Jasmin_de_Minuit.webp" class="card-reco-img" alt="Jasmin de Minuit" loading="lazy">
+              <span class="card-reco-badge badge-zelij">Épuré</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="card-reco-stars" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+                <small class="text-muted">(41)</small>
+              </div>
+              <h3 class="card-title mt-1 mb-1 h6">Jasmin de Minuit</h3>
+              <p class="text-muted small mb-3 flex-grow-1" style="line-height:1.5;">Lys blancs, anémones et jasmin. Élégance pure et mystérieuse.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center">
+                <span class="card-prix">65 €</span>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card card-reco h-100">
+            <div class="card-reco-img-wrap">
+              <img src="img/Mosaique_Imperiale.webp" class="card-reco-img" alt="Mosaïque Impériale" loading="lazy">
+              <span class="card-reco-badge badge-vert">Mixte</span>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="card-reco-stars" aria-label="Note : 4 étoiles sur 5">
+                <span aria-hidden="true">★★★★☆</span>
+                <small class="text-muted">(19)</small>
+              </div>
+              <h3 class="card-title mt-1 mb-1 h6">Mosaïque Impériale</h3>
+              <p class="text-muted small mb-3 flex-grow-1" style="line-height:1.5;">Assemblage audacieux de teintes contrastées. Chef-d'œuvre floral.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center">
+                <span class="card-prix">72 €</span>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card card-reco h-100">
+            <div class="card-reco-img-wrap">
+              <img src="img/Terre_d_Atlas.webp" class="card-reco-img" alt="Terre d'Atlas" loading="lazy">
+              <div class="card-reco-badges">
+                <span class="badge-terra">Rustic</span>
+                <span class="badge-or">-10%</span>
+              </div>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <div class="card-reco-stars" aria-label="Note : 5 étoiles sur 5">
+                <span aria-hidden="true">★★★★★</span>
+                <small class="text-muted">(33)</small>
+              </div>
+              <h3 class="card-title mt-1 mb-1 h6">Terre d'Atlas</h3>
+              <p class="text-muted small mb-3 flex-grow-1" style="line-height:1.5;">Dahlias, œillets cuivrés et feuillages d'automne. Chaud et terrien.</p>
+              <div class="card-cta d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="card-prix">40 €</span>
+                  <small class="text-muted text-decoration-line-through ms-1">44 €</small>
+                </div>
+                <a href="catalogue.html" class="btn btn-zelij btn-sm">Commander</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- newsletter -->
+  <section class="section-sable" aria-label="Inscription à la newsletter">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12 col-md-6">
+          <span class="section-label">Restez informé</span>
+          <h2 class="section-titre">Notre newsletter</h2>
+          <hr class="ocre mx-auto">
+          <p class="text-muted small mb-4">Nouveautés, offres exclusives et inspirations florales — une fois par mois.</p>
+          <div class="input-group">
+            <input type="email" class="form-control form-control-lg" placeholder="votre@email.com" aria-label="Saisissez votre e-mail pour la newsletter">
+            <button class="btn btn-zelij" type="button" style="border-radius:0;white-space:nowrap;">S'inscrire</button>
+          </div>
+          <p class="text-muted mt-2" style="font-size:.72rem;">Désinscription en un clic. Aucun spam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- notification toast commande recente -->
+<div class="position-fixed bottom-0 end-0 p-3 toast-container ta-classe-notification" style="z-index:1100;">
+  <div id="toastCommande" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="5000" style="background:var(--or);">
+    <div class="d-flex">
+      <div class="toast-body" style="font-size:.85rem;">
+        🌸 <strong>Sophie</strong> vient de commander <em>L'Ombre de Majorelle</em>
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fermer la notification"></button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row g-4 pb-4 border-bottom" style="border-color:rgba(255,255,255,.1)!important;">
+      <div class="col-12 col-md-4">
+        <p class="footer-titre mb-1 d-flex align-items-center gap-2">
+          <img src="img/Logo.webp" alt="Logo Zelij" class="logo-footer" loading="lazy">
+          <span>Z<span style="color:var(--or);">e</span>lij</span>
+        </p>
+        <p style="font-size:.8rem;letter-spacing:2px;color:var(--or);text-transform:uppercase;margin-bottom:1rem;">Fleuriste artisanal</p>
+        <p>
+          <a href="https://www.google.com/maps/search/?api=1&query=12+rue+des+rosiers,+75004+Paris" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">12 rue des Rosiers, Paris 4e</a><br>
+          Ouvert du mardi au samedi, 9h–19h
+        </p>
+      </div>
+      <div class="col-6 col-md-4">
+        <p style="color:#fff;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;">Navigation</p>
+        <nav aria-label="Menu du pied de page">
+          <ul class="list-unstyled">
+            <li class="mb-1"><a href="index.html">Accueil</a></li>
+            <li class="mb-1"><a href="catalogue.html">Catalogue</a></li>
+            <li class="mb-1"><a href="apropos.html">À propos</a></li>
+            <li class="mb-1"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-6 col-md-4">
+        <p style="color:#fff;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;">Contact</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">contact@zelij-fleurs.fr</li>
+          <li class="mb-1">01 06 01 06 01</li>
+          <li class="mt-3"><a href="contact.html" class="btn btn-zelij btn-sm">Commander</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-3 text-center" style="font-size:.75rem;">© 2026 Zelij — Tous droits réservés</div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  // affiche le toast apres 2s
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      var toastEl = document.getElementById('toastCommande');
+      if (toastEl && typeof bootstrap !== 'undefined') {
+        new bootstrap.Toast(toastEl).show();
+      }
+    }, 2000);
+  });
+
+  // animations scroll avec IntersectionObserver
+  document.addEventListener('DOMContentLoaded', function () {
+    var els = document.querySelectorAll('[data-anim]');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function(el){ el.classList.add('is-visible'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var d = parseInt(el.getAttribute('data-anim-delay') || '0');
+          setTimeout(function(){ el.classList.add('is-visible'); }, d);
+          obs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(function(el){ obs.observe(el); });
+  });
+</script>
+
+</body>
+</html>

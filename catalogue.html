@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zelij - Catalogue de bouquets artisanaux inspirés de la mosaïque marocaine. Livraison Paris 24h.">
+  <title>Zelij - Catalogue de Bouquets</title>
+  <link rel="icon" type="image/webp" href="img/Logo.webp">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="zellige-border" aria-hidden="true"></div>
+
+<!-- nav principale -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+        <img src="img/Logo.webp" alt="Logo Zelij" height="38">
+        <span>Z<span>e</span>lij</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalogue.html">Catalogue</a></li>
+          <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- banniere hero avec flou -->
+  <section class="py-5 position-relative" style="min-height:250px;display:flex;align-items:center;overflow:hidden;">
+    <div style="position:absolute;inset:0;background:url('img/banniere.webp') center/cover no-repeat;filter:blur(3px);transform:scale(1.05);z-index:0;"></div>
+    <div style="position:absolute;inset:0;background:rgba(13,31,45,0.65);z-index:1;"></div>
+    <div class="container text-center text-white position-relative" style="z-index:2;">
+      <nav aria-label="Fil d'Ariane" class="d-flex justify-content-center mb-3">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none opacity-75">Accueil</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Catalogue</li>
+        </ol>
+      </nav>
+      <h1 class="display-4" style="color: var(--text); font-family:'Cormorant Garamond',serif;font-weight:bold;">Toutes nos créations</h1>
+      <p class="lead mb-0 opacity-75">Bouquets artisanaux assemblés à Paris. Livraison sous 24h.</p>
+    </div>
+  </section>
+
+  <!-- bande livraison offerte -->
+  <div class="bg-light border-bottom">
+    <div class="container py-2">
+      <div class="d-flex align-items-center justify-content-center gap-2 small text-muted">
+        <span style="font-size:1.1rem;color:var(--or);">🚚</span>
+        <strong>Livraison offerte</strong> pour toute commande > 60 €. Commandez avant 12h pour une expédition le jour même.
+      </div>
+    </div>
+  </div>
+
+  <!-- catalogue principal : sidebar + grille produits -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- sidebar filtres (desktop uniquement) -->
+        <aside class="col-12 col-lg-3 d-none d-lg-block">
+          <div class="sticky-top" style="top:100px;z-index:1;">
+            <h2 class="h5 mb-4" style="font-family:'Cormorant Garamond',serif;color:var(--cobalt);">Affiner la recherche</h2>
+
+            <!-- filtre occasion -->
+            <div class="mb-4 pb-3 border-bottom">
+              <h3 class="h6 fw-bold text-uppercase" style="font-size:.8rem;letter-spacing:1px;">Occasion</h3>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="f-mariage">
+                <label class="form-check-label small text-muted" for="f-mariage">Mariage (12)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="f-anniversaire">
+                <label class="form-check-label small text-muted" for="f-anniversaire">Anniversaire (8)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="f-amour">
+                <label class="form-check-label small text-muted" for="f-amour">Amour (15)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="f-entreprise">
+                <label class="form-check-label small text-muted" for="f-entreprise">Entreprise (5)</label>
+              </div>
+            </div>
+
+            <!-- filtre budget -->
+            <div class="mb-4 pb-3 border-bottom">
+              <h3 class="h6 fw-bold text-uppercase" style="font-size:.8rem;letter-spacing:1px;">Budget</h3>
+              <div class="form-check mt-2">
+                <input class="form-check-input" type="radio" name="budget" id="b-1">
+                <label class="form-check-label small text-muted" for="b-1">Moins de 40 €</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="budget" id="b-2">
+                <label class="form-check-label small text-muted" for="b-2">40 € - 60 €</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="budget" id="b-3">
+                <label class="form-check-label small text-muted" for="b-3">Plus de 60 €</label>
+              </div>
+            </div>
+
+            <!-- filtre couleur -->
+            <div class="mb-4">
+              <h3 class="h6 fw-bold text-uppercase" style="font-size:.8rem;letter-spacing:1px;">Couleur dominante</h3>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <span class="rounded-circle d-inline-block border" style="width:25px;height:25px;background:#fff;cursor:pointer;" title="Blanc"></span>
+                <span class="rounded-circle d-inline-block shadow-sm" style="width:25px;height:25px;background:#d9534f;cursor:pointer;" title="Rouge"></span>
+                <span class="rounded-circle d-inline-block shadow-sm" style="width:25px;height:25px;background:#f0ad4e;cursor:pointer;" title="Orange/Or"></span>
+                <span class="rounded-circle d-inline-block shadow-sm" style="width:25px;height:25px;background:#5bc0de;cursor:pointer;" title="Bleu"></span>
+              </div>
+            </div>
+
+            <button class="btn btn-outline-zelij w-100 btn-sm mt-2">Réinitialiser les filtres</button>
+          </div>
+        </aside>
+
+        <!-- grille produits -->
+        <div class="col-12 col-lg-9">
+
+          <!-- barre tri -->
+          <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+            <span class="text-muted small"><strong>6</strong> bouquets affichés</span>
+            <select class="form-select form-select-sm w-auto border-0 bg-light">
+              <option selected>Trier par : Recommandés</option>
+              <option value="1">Prix croissant</option>
+              <option value="2">Prix décroissant</option>
+              <option value="3">Nouveautés</option>
+            </select>
+          </div>
+
+          <div class="row g-4">
+
+            <!-- card L'Ombre de Majorelle -->
+            <div class="col-12 col-sm-6 col-xl-4" data-anim="fade-in-up">
+              <article class="card h-100 border-0 shadow-sm">
+                <img src="img/L_Ombre_de_Majorelle.webp" class="card-img-top rounded-0" alt="L'Ombre de Majorelle">
+                <div class="card-body d-flex flex-column p-3">
+                  <div class="d-flex gap-2 flex-wrap mb-2">
+                    <span class="badge-zelij">Best-seller</span>
+                  </div>
+                  <h3 class="card-title h6 mb-1 fw-bold">L'Ombre de Majorelle</h3>
+                  <div class="text-warning small mb-2" aria-label="4.8 étoiles sur 5">★★★★★ <span class="text-muted">(124)</span></div>
+                  <p class="text-muted small flex-grow-1" style="font-size:.8rem;">Delphiniums, hortensias et chardons bleus. Électrique et envoûtant.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-2 border-top pt-3">
+                    <span class="fw-bold" style="color:var(--cobalt);font-size:1.1rem;">49 €</span>
+                    <button class="btn btn-zelij btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalCommande" data-produit="L'Ombre de Majorelle" data-prix="49 €">Commander</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- card Rose de Dadès -->
+            <div class="col-12 col-sm-6 col-xl-4" data-anim="fade-in-up" data-anim-delay="130">
+              <article class="card h-100 border-0 shadow-sm">
+                <img src="img/Rose_de_Dades.webp" class="card-img-top rounded-0" alt="Rose de Dadès">
+                <div class="card-body d-flex flex-column p-3">
+                  <div class="d-flex gap-2 flex-wrap mb-2">
+                    <span class="badge-cobalt">Nouveau</span>
+                  </div>
+                  <h3 class="card-title h6 mb-1 fw-bold">Rose de Dadès</h3>
+                  <div class="text-warning small mb-2" aria-label="5 étoiles sur 5">★★★★★ <span class="text-muted">(45)</span></div>
+                  <p class="text-muted small flex-grow-1" style="font-size:.8rem;">Roses anciennes, pivoines et boutons soyeux. La douceur brute.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-2 border-top pt-3">
+                    <span class="fw-bold" style="color:var(--cobalt);font-size:1.1rem;">55 €</span>
+                    <button class="btn btn-zelij btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalCommande" data-produit="Rose de Dadès" data-prix="55 €">Commander</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- card Terre d'Atlas (promo -10%) -->
+            <div class="col-12 col-sm-6 col-xl-4" data-anim="fade-in-up" data-anim-delay="260">
+              <article class="card h-100 border-0 shadow-sm">
+                <div class="position-relative">
+                  <img src="img/Terre_d_Atlas.webp" class="card-img-top rounded-0" alt="Terre d'Atlas">
+                  <span class="position-absolute top-0 start-0 bg-danger text-white px-2 py-1 small fw-bold mt-2 ms-2">-10%</span>
+                </div>
+                <div class="card-body d-flex flex-column p-3">
+                  <div class="d-flex gap-2 flex-wrap mb-2">
+                    <span class="badge-terra">Chaleur</span>
+                  </div>
+                  <h3 class="card-title h6 mb-1 fw-bold">Terre d'Atlas</h3>
+                  <div class="text-warning small mb-2" aria-label="4.5 étoiles sur 5">★★★★☆ <span class="text-muted">(89)</span></div>
+                  <p class="text-muted small flex-grow-1" style="font-size:.8rem;">Dahlias, œillets cuivrés et feuillages d'automne.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-2 border-top pt-3">
+                    <div>
+                      <span class="fw-bold text-danger" style="font-size:1.1rem;">40 €</span>
+                      <small class="text-muted text-decoration-line-through ms-1">44 €</small>
+                    </div>
+                    <button class="btn btn-zelij btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalCommande" data-produit="Terre d'Atlas" data-prix="40 €">Commander</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- encart mise en avant mariage -->
+            <div class="col-12 mt-4 mb-2">
+              <div class="card bg-dark text-white border-0 overflow-hidden rounded-0 shadow">
+                <div class="row g-0 align-items-center">
+                  <div class="col-md-8 p-4 p-lg-5">
+                    <span class="badge bg-light text-dark mb-2 text-uppercase" style="letter-spacing:1px;">Événements</span>
+                    <h3 class="h4" style="font-family:'Cormorant Garamond',serif;">Service Mariage Sur-Mesure</h3>
+                    <p class="small opacity-75 mb-3">Nous vous accompagnons pour créer des compositions uniques qui reflètent votre histoire. Consultation gratuite en boutique.</p>
+                    <a href="contact.html" class="btn btn-outline-light btn-sm rounded-pill px-4">Prendre rendez-vous</a>
+                  </div>
+                  <div class="col-md-4 d-none d-md-block h-100">
+                    <img src="img/Jasmin_de_Minuit.webp" alt="Bouquet mariage" class="img-fluid h-100 w-100" style="object-fit:cover;min-height:200px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card Or Berbère -->
+            <div class="col-12 col-sm-6 col-xl-4" data-anim="fade-in-up">
+              <article class="card h-100 border-0 shadow-sm">
+                <img src="img/Or_Berbere.webp" class="card-img-top rounded-0" alt="Or Berbère" loading="lazy">
+                <div class="card-body d-flex flex-column p-3">
+                  <div class="d-flex gap-2 flex-wrap mb-2">
+                    <span class="badge-or">Saison</span>
+                  </div>
+                  <h3 class="card-title h6 mb-1 fw-bold">Or Berbère</h3>
+                  <div class="text-warning small mb-2" aria-label="5 étoiles sur 5">★★★★★ <span class="text-muted">(56)</span></div>
+                  <p class="text-muted small flex-grow-1" style="font-size:.8rem;">Mimosa, craspedia et roses jaunes. Éclatant.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-2 border-top pt-3">
+                    <span class="fw-bold" style="color:var(--cobalt);font-size:1.1rem;">38 €</span>
+                    <button class="btn btn-zelij btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalCommande" data-produit="Or Berbère" data-prix="38 €">Commander</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- card Jasmin de Minuit -->
+            <div class="col-12 col-sm-6 col-xl-4" data-anim="fade-in-up" data-anim-delay="130">
+              <article class="card h-100 border-0 shadow-sm">
+                <img src="img/Jasmin_de_Minuit.webp" class="card-img-top rounded-0" alt="Jasmin de Minuit" loading="lazy">
+                <div class="card-body d-flex flex-column p-3">
+                  <div class="d-flex gap-2 flex-wrap mb-2">
+                    <span class="badge-zelij">Épuré</span>
+                  </div>
+                  <h3 class="card-title h6 mb-1 fw-bold">Jasmin de Minuit</h3>
+                  <div class="text-warning small mb-2" aria-label="5 étoiles sur 5">★★★★★ <span class="text-muted">(210)</span></div>
+                  <p class="text-muted small flex-grow-1" style="font-size:.8rem;">Lys blancs, anémones et branches de jasmin. Élégance pure.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-2 border-top pt-3">
+                    <span class="fw-bold" style="color:var(--cobalt);font-size:1.1rem;">65 €</span>
+                    <button class="btn btn-zelij btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalCommande" data-produit="Jasmin de Minuit" data-prix="65 €">Commander</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <!-- card Mosaïque Impériale -->
+            <div class="col-12 col-sm-6 col-xl-4" data-anim="fade-in-up" data-anim-delay="260">
+              <article class="card h-100 border-0 shadow-sm">
+                <img src="img/Mosaique_Imperiale.webp" class="card-img-top rounded-0" alt="Mosaïque Impériale" loading="lazy">
+                <div class="card-body d-flex flex-column p-3">
+                  <div class="d-flex gap-2 flex-wrap mb-2">
+                    <span class="badge-vert">Mixte</span>
+                  </div>
+                  <h3 class="card-title h6 mb-1 fw-bold">Mosaïque Impériale</h3>
+                  <div class="text-warning small mb-2" aria-label="4.9 étoiles sur 5">★★★★★ <span class="text-muted">(77)</span></div>
+                  <p class="text-muted small flex-grow-1" style="font-size:.8rem;">Un assemblage audacieux de teintes contrastées.</p>
+                  <div class="d-flex justify-content-between align-items-center mt-2 border-top pt-3">
+                    <span class="fw-bold" style="color:var(--cobalt);font-size:1.1rem;">72 €</span>
+                    <button class="btn btn-zelij btn-sm rounded-pill px-3" data-bs-toggle="modal" data-bs-target="#modalCommande" data-produit="Mosaïque Impériale" data-prix="72 €">Commander</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <!-- pagination -->
+          <nav aria-label="Pagination catalogue" class="mt-5 border-top pt-4">
+            <ul class="pagination justify-content-center mb-0">
+              <li class="page-item disabled"><a class="page-link border-0 text-muted" href="#">Précédent</a></li>
+              <li class="page-item active"><a class="page-link rounded-circle mx-1 bg-dark border-dark" href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">1</a></li>
+              <li class="page-item"><a class="page-link rounded-circle mx-1 text-dark border-0" href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">2</a></li>
+              <li class="page-item"><a class="page-link rounded-circle mx-1 text-dark border-0" href="#" style="width:40px;height:40px;display:flex;align-items:center;justify-content:center;">3</a></li>
+              <li class="page-item"><a class="page-link border-0 text-dark fw-bold" href="#">Suivant</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- bloc seo / description boutique -->
+  <section class="section-sable border-top">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8 text-center">
+          <h2 class="h4 mb-3" style="font-family:'Cormorant Garamond',serif;color:var(--cobalt);">L'art du bouquet artisanal à Paris</h2>
+          <p class="text-muted small" style="line-height:1.8;">
+            Notre catalogue de fleurs fraîches est pensé pour répondre à toutes vos envies. Chez Zelij, chaque bouquet est conçu comme une œuvre d'art, inspirée par la chaleur et la géométrie des zelliges marocains. Nous sélectionnons méticuleusement nos fleurs auprès de producteurs locaux d'Île-de-France pour garantir une fraîcheur absolue et un impact carbone réduit. Que ce soit pour un mariage, une déclaration d'amour ou pour illuminer vos bureaux, notre équipe d'artisans fleuristes assure une livraison express dans Paris sous 24h.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- modal commande -->
+<div class="modal fade" id="modalCommande" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 rounded-0 shadow-lg" style="border-top:5px solid var(--or)!important;">
+      <div class="modal-header border-0 pb-0">
+        <div>
+          <h2 class="modal-title h5 mb-0 fw-bold" id="modalLabel" style="color:var(--cobalt);">Commander ce bouquet</h2>
+          <p class="text-muted small mb-0 mt-1" id="modalSousTitre" aria-live="polite"></p>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Annuler"></button>
+      </div>
+      <form id="commandeForm" novalidate>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-6">
+              <label for="commandePrenom" class="form-label small fw-bold text-muted">Prénom *</label>
+              <input type="text" class="form-control bg-light border-0" id="commandePrenom" placeholder="Prénom" required>
+            </div>
+            <div class="col-6">
+              <label for="commandeNom" class="form-label small fw-bold text-muted">Nom *</label>
+              <input type="text" class="form-control bg-light border-0" id="commandeNom" placeholder="Nom" required>
+            </div>
+            <div class="col-12">
+              <label for="commandeEmail" class="form-label small fw-bold text-muted">E-mail *</label>
+              <input type="email" class="form-control bg-light border-0" id="commandeEmail" placeholder="vous@exemple.com" required>
+            </div>
+            <div class="col-12">
+              <label for="commandeDate" class="form-label small fw-bold text-muted">Date de livraison souhaitée *</label>
+              <input type="date" class="form-control bg-light border-0" id="commandeDate" required>
+            </div>
+            <div class="col-12">
+              <label for="commandeMessage" class="form-label small fw-bold text-muted">Message (facultatif)</label>
+              <textarea class="form-control bg-light border-0" id="commandeMessage" rows="2" placeholder="Dédicace..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0 mt-3">
+          <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Annuler</button>
+          <button type="submit" class="btn btn-zelij rounded-pill px-4 shadow-sm">Valider (Paiement sécurisé)</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row g-4 pb-4 border-bottom" style="border-color:rgba(255,255,255,.1)!important;">
+      <div class="col-12 col-md-4">
+        <p class="footer-titre mb-1 d-flex align-items-center gap-2">
+          <img src="img/Logo.webp" alt="Logo Zelij" class="logo-footer" loading="lazy">
+          <span>Z<span style="color:var(--or);">e</span>lij</span>
+        </p>
+        <p style="font-size:.8rem;letter-spacing:2px;color:var(--or);text-transform:uppercase;margin-bottom:1rem;">Fleuriste artisanal</p>
+        <p>12 rue des Rosiers, Paris 4e<br>Ouvert du mardi au samedi, 9h–19h</p>
+      </div>
+      <div class="col-6 col-md-4">
+        <p style="color:#fff;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;">Navigation</p>
+        <ul class="list-unstyled">
+          <li class="mb-1"><a href="index.html">Accueil</a></li>
+          <li class="mb-1"><a href="catalogue.html">Catalogue</a></li>
+          <li class="mb-1"><a href="apropos.html">À propos</a></li>
+          <li class="mb-1"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4">
+        <p style="color:#fff;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:1rem;">Contact</p>
+        <ul class="list-unstyled">
+          <li class="mb-1">contact@zelij-fleurs.fr</li>
+          <li class="mb-1">01 06 01 06 01</li>
+          <li class="mt-3"><a href="contact.html" class="btn btn-zelij btn-sm">Commander</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-3 text-center" style="font-size:.75rem;">© 2026 Zelij — Tous droits réservés</div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/anim.js"></script>
+
+<!-- script modal : injecte le nom et prix du produit cliqué -->
+<script>
+  var modalEl = document.getElementById('modalCommande');
+  modalEl.addEventListener('show.bs.modal', function(e) {
+    var btn = e.relatedTarget;
+    document.getElementById('modalSousTitre').textContent = btn.getAttribute('data-produit') + ' — ' + btn.getAttribute('data-prix');
+  });
+</script>
+
+</body>
+</html>
